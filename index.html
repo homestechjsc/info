@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lắp Camera Đà Lạt Uy Tín, Giá Tốt Cho Homestay & Villa | Homestech</title>
+
+    <meta name="description" content="Chuyên lắp đặt camera Đà Lạt, khóa cửa điện tử, điện thông minh cho homestay, villa. Khảo sát miễn phí, thi công nhanh, bảo hành tận nơi.">
+    <meta name="keywords" content="camera Đà Lạt, khóa cửa điện tử Đà Lạt, điện thông minh Đà Lạt, smarthome Đà Lạt">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://homestechjsc.vn/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Homestech - Camera & Smarthome Đà Lạt">
+    <meta property="og:description" content="Giải pháp camera, khóa cửa, điện thông minh tại Đà Lạt">
+    <meta property="og:image" content="https://homestechjsc.vn/wp-content/uploads/2025/05/cropped-cropped-logopng1-1.png">
+    <meta property="og:type" content="website">
+
+    <!-- Schema Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Homestech JSC",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "287/28 Phan Đình Phùng",
+        "addressLocality": "Đà Lạt",
+        "addressRegion": "Lâm Đồng",
+        "addressCountry": "VN"
+      },
+      "telephone": "0784289289",
+      "url": "https://homestechjsc.vn/"
+    }
+    </script>
+    <style>
+        :root {
+            --primary-color: #004a99;
+            --secondary-color: #f39c12;
+            --dark-color: #2c3e50;
+            --light-color: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--light-color); color: #333; line-height: 1.6; }
+
+        header {
+            background: var(--white);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-wrap { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+        .logo-wrap img { height: 55px; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-main { font-size: 14px; font-weight: bold; color: var(--primary-color); line-height: 1.2; }
+        .logo-sub { font-size: 10px; color: #666; font-weight: normal; }
+
+        .contact-btn {
+            background: var(--secondary-color);
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 74, 153, 0.8), rgba(0, 74, 153, 0.8)), url('https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 2.2rem; margin-bottom: 20px; text-transform: uppercase; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 800px; margin: 0 auto 30px; }
+
+        .section-title { text-align: center; margin-bottom: 40px; padding: 0 5%; }
+        .section-title h2 { font-size: 20pt; color: var(--primary-color); position: relative; padding-bottom: 10px; }
+        .section-title h2::after { content: ''; width: 60px; height: 3px; background: var(--secondary-color); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+
+        .services { padding: 60px 5%; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .service-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card i { font-size: 40px; color: var(--secondary-color); margin-bottom: 15px; display: block; }
+
+        .projects { padding: 60px 5%; background: #fff; overflow: hidden; }
+        .project-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Ép tỉ lệ trên Điện thoại */
+@media (max-width: 600px) {
+    .slides img {
+        width: 50% !important; /* Hiện đúng 2 hình */
+        height: 160px !important;
+    }
+}
+
+        .features { padding: 60px 5%; background: var(--light-color); }
+        .feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .feature-card { background: white; padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .feature-card .icon { width: 50px; height: 50px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 20px; }
+
+        .pricing { padding: 60px 5%; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; background: white; min-width: 600px; }
+        th { background: var(--primary-color); color: white; padding: 15px; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #eee; }
+
+        .container-3col {
+    /* Thay đổi từ 1200px lên 90% hoặc 95% để dãn rộng ra biên */
+    max-width: 90%; 
+    margin: 40px auto; 
+    display: grid;
+    /* Chia tỉ lệ: Cột Map (giữa) rộng hơn một chút để cân đối */
+    grid-template-columns: 1fr 1.5fr 1fr; 
+    gap: 30px; 
+    padding: 0; /* Bỏ padding thừa để bám sát lề của các tab trên */
+    align-items: stretch;
+}
+
+/* Đảm bảo các khung bên trong cao bằng nhau */
+.company-info, .contact-form {
+    background: white;
+    /* Tăng padding lên 30px hoặc 40px để chữ dãn lề đẹp hơn */
+    padding: 35px; 
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Tăng khoảng cách dòng cho các đoạn văn bản thông tin */
+.company-info p {
+    margin-bottom: 15px; /* Khoảng cách giữa các dòng thông tin */
+    line-height: 1.8;    /* Giúp chữ dãn theo chiều dọc, dễ đọc hơn */
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;           /* Khoảng cách giữa Icon và Chữ */
+}
+
+/* Chỉnh khoảng cách cho phần tiêu đề cột */
+.company-info h3, .contact-form h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+        .map-box iframe { width: 100%; height: 100%; min-height: 300px; border: none; border-radius: 8px; }
+        .form-group { margin-bottom: 12px; }
+        .form-group label { display: block; font-size: 13px; font-weight: bold; margin-bottom: 5px; }
+        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .submit-btn { width: 100%; padding: 12px; background: var(--primary-color); color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+
+        .pdf-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+        .pdf-content { width: 90%; height: 90%; margin: 2% auto; background: white; border-radius: 8px; position: relative; }
+        .pdf-content iframe { width: 100%; height: 100%; border: none; }
+        .close-btn { position: absolute; top: -10px; right: -10px; width: 35px; height: 35px; background: #f39c12; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 24px; }
+
+        .floating-zalo { position: fixed; bottom: 20px; right: 20px; background: #0068ff; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; }
+        .floating-hotline { position: fixed; bottom: 80px; right: 20px; background: #e74c3c; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; }
+
+        @media (max-width: 992px) {
+            .container-3col { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 1.6rem; }
+            .slides img {
+        width: 50% !important; /* Ép hiển thị đúng 2 hình trên mobile */
+        height: 150px; /* Có thể hạ độ cao một chút cho cân đối trên điện thoại */
+    }
+            .logo-sub { display: none; }
+        }
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 30px 5%;
+            text-align: center;
+        }
+        /* Style cho nút điều hướng */
+.project-slider-wrapper { margin-top: 20px; }
+.project-slider { width: 100%; overflow: hidden; border-radius: 15px; }
+
+.slides { 
+    display: flex; 
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); 
+    gap: 0; 
+}
+
+.seo-section {
+    padding: 60px 5%;
+    background: #fff;
+}
+
+.seo-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.seo-item {
+    background: #f9fafb;
+    padding: 25px;
+    border-radius: 12px;
+    line-height: 1.7;
+    transition: 0.3s;
+}
+
+.seo-item:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .seo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.slides img {
+    flex-shrink: 0;
+    width: 20%; /* PC hiện 5 hình */
+    height: 180px;
+    object-fit: cover;
+    padding: 5px; /* Khoảng cách giữa các ảnh */
+    border-radius: 15px;
+}
+
+/* Nút điều hướng */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 74, 153, 0.8);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+@media (max-width: 600px) {
+    .slides img { 
+        width: 50% !important; /* Điện thoại hiện 2 hình */
+        height: 150px; 
+    }
+    .nav-btn { width: 30px; height: 30px; font-size: 14px; }
+}
+.intro-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 90%; /* Sửa từ 1100px thành 90% */
+    margin: auto;
+    padding: 20px 0; /* Bỏ padding ngang để bám sát lề trái/phải */
+}
+
+/* TEXT BLOCK */
+.intro-text{
+    padding: 25px;
+    border: 2px solid #004a99;   /* viền xanh */
+    border-radius: 12px;         /* bo góc */
+    background: #ffffff;         /* nền nhẹ xanh rất nhạt */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* H2 đồng bộ với section title */
+.intro-text h2{
+    font-size: 26px;
+    margin-bottom: 18px;
+    color: #004a99;
+    line-height: 1.3;
+}
+
+/* paragraph đều và dễ đọc hơn */
+.intro-text p{
+    margin-bottom: 14px;
+}
+
+/* block từng dịch vụ */
+.intro-block{
+    margin-top: 18px;
+    padding: 12px 0 12px 14px;
+    border-left: 3px solid #f39c12;
+}
+
+/* H3 đều hơn */
+.intro-block h3{
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+/* IMAGE */
+.intro-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image img{
+    width: 100%;
+    max-width: 600px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .intro-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 10px 15px;
+    }
+
+    .intro-text h2{
+        font-size: 22px;
+    }
+}
+.footer-link {
+    background: transparent !important;
+    color: #dd8007;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #f39c12;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo-wrap">
+        <img src="https://homestechjsc.vn/wp-content/uploads/2025/05/cropped-cropped-logopng1-1.png" alt="Homestech Logo">
+    </a>
+    <a href="javascript:void(0)" class="contact-btn" onclick="openProfile()">
+        <i class="fa-solid fa-file-pdf"></i> Profile
+    </a>
+</header>
+
+ <section class="hero">
+        <h1>Lắp đặt Camera, Khóa cửa điện tử & Điện thông minh tại Đà Lạt</h1>
+        <p>Chuyên tư vấn, lắp đặt Camera, Wifi Marketing, Khóa cửa điện tử và Nhà thông minh cho Biệt thự, Homestay, Khách sạn tại Lâm Đồng.</p>
+        <a href="#register" class="contact-btn" style="padding: 15px 40px; font-size: 14pt;">NHẬN BÁO GIÁ MIỄN PHÍ</a>
+    </section>
+
+    <section class="services">
+        <div class="section-title">
+            <h2>Dịch vụ lắp đặt camera, khóa cửa & smarthome tại Đà Lạt</h2>
+        </div>
+        <div class="service-grid">
+    <div class="service-card">
+        <i class="fa-solid fa-video"></i>
+        <h3>Camera An Ninh AI</h3>
+        <p>Hệ thống giám sát sắc nét 4K, cảnh báo đột nhập qua điện thoại. Bảo hành tận nơi 24 tháng.</p>
+    </div>
+
+    <div class="service-card">
+        <i class="fa-solid fa-wifi"></i>
+        <h3>Wifi Mesh Chuyên Dụng</h3>
+        <p>Giải pháp Internet tốc độ cao cho Homestay & Khách sạn. Không góc chết, chịu tải hàng trăm thiết bị.</p>
+    </div>
+
+    <div class="service-card">
+        <i class="fa-solid fa-door-closed"></i>
+        <h3>Khóa Cửa Điện Tử</h3>
+        <p>Quản lý check-in từ xa cho chủ Villa. Mở khóa bằng Vân tay, Mã số, Thẻ từ và App mobile.</p>
+    </div>
+
+    <div class="service-card">
+        <i class="fa-solid fa-house-signal"></i>
+        <h3>Nhà Thông Minh (Smarthome)</h3>
+        <p>Điều khiển hệ thống đèn, rèm cửa, máy nước nóng tự động theo ngữ cảnh và giọng nói.</p>
+    </div>
+
+    <div class="service-card">
+        <i class="fa-solid fa-network-wired"></i>
+        <h3>Điện Nhẹ & Hạ Tầng Mạng</h3>
+        <p>Thi công hệ thống điện nhẹ, âm tường thẩm mỹ cho các công trình đang xây dựng.</p>
+    </div>
+</div>
+
+<section class="projects">
+    <div class="section-title">
+        <h2>Công trình thực tế</h2>
+        <p>Hơn 500+ dự án Homestech đã triển khai tại Đà Lạt</p>
+    </div>
+
+    <!-- Container bao quanh để định vị nút điều hướng -->
+    <div class="project-slider-wrapper" style="position: relative; width: 100%; overflow: hidden; padding: 0 10px;">
+        
+        <div class="project-slider">
+            <div class="slides" id="projectSlides">
+                <!-- Đảm bảo đủ 7 hình -->
+                <img src="https://homestechjsc.vn/wp-content/uploads/2025/04/dalatroof-cameradalat-300x141.png"loading="lazy" alt="Lắp đặt camera tại Đà Lạt">
+                <img src="https://homestechjsc.vn/wp-content/uploads/2025/04/newlifedalat-300x141.png" loading="lazy" alt="Lắp đặt camera tại Đà Lạt">
+                <img src="https://static.ladipage.net/60188afdc1b48f00110752bf/1-20240704075630-lhbaf.jpg" loading="lazy" alt="Lắp đặt camera tại Đà Lạt">
+                <img src="https://homestechjsc.vn/wp-content/uploads/2025/04/serra-diennhedalat-300x215.png" loading="lazy" alt="Lắp đặt khóa từ tại Đà Lạt">
+                <img src="https://image.vietgoing.com/hotel/05/05/large/vietgoing_lbx2504168243.webp" loading="lazy" alt="Lắp đặt điện thông minh tại Đà Lạt">
+                <img src="https://content.skyscnr.com/available/2473974891/2473974891_WxH.jpg" loading="lazy" alt="Lắp đặt điện thông minh tại Đà Lạt">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/650458961.jpg?k=0722ea13e1796c0459552e924478d4f4c07c0423a8df84ad400d89aa705a2695&o=" loading="lazy" alt="Lắp đặt camera tại Đà Lạt">
+            </div>
+        </div>
+
+        <!-- Nút điều hướng nổi lên trên -->
+        <button class="nav-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="nav-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+<section class="features">
+    <div class="section-title">
+        <h2>Vì sao nên chọn chúng tôi?</h2>
+        </div>
+    <div class="feature-list">
+        <div class="feature-card">
+            <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>100% Chính Hãng</h3>
+            <p>Thiết bị nhập khẩu, bảo hành đầy đủ</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon"><i class="fa-solid fa-clock"></i></div>
+            <h3>Hỗ Trợ 2 Giờ</h3>
+            <p>Kỹ thuật có mặt nhanh tại Đà Lạt</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon"><i class="fa-solid fa-building"></i></div>
+            <h3>500+ Công Trình</h3>
+            <p>Kinh nghiệm thực tế nhiều dự án lớn nhỏ</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon"><i class="fa-solid fa-gift"></i></div>
+            <h3>Bảo Hành 12 Tháng</h3>
+            <p>Hỗ trợ tận nơi, không phát sinh chi phí</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="pricing">
+    <div class="section-title">
+        <h2>Gói giải pháp ưu đãi</h2>
+        <p>Tiết kiệm hơn khi lắp đặt trọn gói giải pháp</p>
+    </div>
+    <div style="overflow-x: auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Gói Giải Pháp</th>
+                    <th>Thiết Bị Gồm Có</th>
+                    <th>Phù Hợp Với</th>
+                    <th style="text-align: center;">Giá Ưu Đãi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Gói Tiết Kiệm</b></td>
+                    <td>2 Camera Full HD + Wifi Router AC1200</td>
+                    <td>Căn hộ, Shop thời trang, Quán Cafe nhỏ</td>
+                    <td style="text-align: center;">
+                        <span style="display: inline-block; background: linear-gradient(135deg, #ff9800, #f44336); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; box-shadow: 0 4px 10px rgba(244, 67, 54, 0.3); font-size: 0.9rem;">
+                            Chỉ từ 2.990.000đ
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Gói Homestay Pro</b></td>
+                    <td>4 Camera AI + Khóa Vân Tay + Hệ thống Wifi Mesh 3 nốt</td>
+                    <td>Chủ kinh doanh Homestay, Nhà cho thuê</td>
+                    <td style="text-align: center;">
+                        <span style="display: inline-block; background: linear-gradient(135deg, #ff9800, #f44336); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; box-shadow: 0 4px 10px rgba(244, 67, 54, 0.3); font-size: 0.9rem;">
+                            Chỉ từ 9.990.000đ
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Gói Villa Smarthome</b></td>
+                    <td>Trọn bộ Camera + Khóa điện tử + Điều khiển đèn/rèm</td>
+                    <td>Biệt thự, Villa nghỉ dưỡng cao cấp</td>
+                    <td style="text-align: center;">
+                        <span style="display: inline-block; background: linear-gradient(135deg, #ff9800, #f44336); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; box-shadow: 0 4px 10px rgba(244, 67, 54, 0.3); font-size: 0.9rem;">
+                            Chỉ từ 14.990.000đ
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="intro-section">
+    <div class="section-title">
+        <h2>Giải pháp Camera, Khóa cửa điện tử & Smarthome tại Đà Lạt</h2>
+    </div>
+
+    <div class="intro-container">
+
+        <!-- TEXT -->
+        <div class="intro-text">
+            <p>
+Homestech là đơn vị chuyên <strong>lắp đặt camera Đà Lạt</strong>, 
+<strong>khóa cửa điện tử Đà Lạt</strong> và giải pháp <strong>smarthome Đà Lạt</strong> 
+cho homestay, villa, khách sạn và nhà cho thuê.
+</p>
+
+<p>
+Chúng tôi cung cấp giải pháp an ninh và nhà thông minh trọn gói giúp 
+quản lý từ xa, tăng an toàn tài sản và tối ưu vận hành cho chủ kinh doanh tại Đà Lạt.
+</p>
+
+            <div class="intro-list">
+
+                <div class="intro-item">
+                    <h3>Lắp đặt camera Đà Lạt giám sát 24/7</h3>
+                    <p>Giám sát 24/7, cảnh báo AI, xem từ xa qua điện thoại.</p>
+                </div>
+
+                <div class="intro-item">
+                    <h3>Khóa cửa điện tử Đà Lạt cho homestay & villa</h3>
+                    <p>Mở khóa bằng vân tay, mã số, app. Hỗ trợ check-in tự động.</p>
+                </div>
+
+                <div class="intro-item">
+                    <h3>Giải pháp smarthome Đà Lạt thông minh</h3>
+                    <p>Điều khiển đèn, rèm, thiết bị điện từ xa, tiết kiệm năng lượng.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="intro-image">
+            <img src="https://homestechjsc.vn/wp-content/uploads/2026/05/z7789173799657_bb77de5424cfff799c8950407d1de8d9.jpg"
+                 alt="Camera Đà Lạt - Khóa cửa điện tử - Smarthome Homestech">
+        </div>
+
+    </div>
+</section>
+<section id="register" class="container-3col">
+    <div class="company-info">
+    <h3 style="color: var(--primary-color); margin-bottom: 15px; border-bottom: 2px solid var(--secondary-color); display: inline-block;">
+        HOMESTECH JSC
+    </h3>
+    
+    <p style="margin-bottom: 10px;">
+        <i class="fa-solid fa-location-dot" style="color: var(--primary-color); width: 20px;"></i> 
+        <strong>Địa chỉ:</strong> 287/28 Phan Đình Phùng, P. 2, Đà Lạt, Lâm Đồng
+    </p>
+    
+    <p style="margin-bottom: 10px;">
+        <i class="fa-solid fa-phone-volume" style="color: var(--primary-color); width: 20px;"></i> 
+        <strong>Hotline:</strong> 0909255788
+    </p>
+    
+    <p style="margin-bottom: 10px;">
+        <i class="fa-solid fa-envelope" style="color: var(--primary-color); width: 20px;"></i> 
+        <strong>Email:</strong> info@homestechjsc.vn
+    </p>
+    
+    <p style="margin-bottom: 10px;">
+        <i class="fa-solid fa-globe" style="color: var(--primary-color); width: 20px;"></i> 
+        <strong>Website:</strong> https://homestechjsc.vn/
+    </p>
+    
+    <p style="margin-bottom: 10px;">
+        <i class="fa-solid fa-file-invoice" style="color: var(--primary-color); width: 20px;"></i> 
+        <strong>MST:</strong> 5801490443
+    </p>
+    
+    <hr style="margin:15px 0; opacity: 0.1;">
+    
+    <p style="color:#16a34a; font-weight: 500; margin-bottom: 8px;">
+        <i class="fa-solid fa-circle-check"></i> Khảo sát miễn phí tận nơi
+    </p>
+    
+    <p style="color:#16a34a; font-weight: 500;">
+        <i class="fa-solid fa-shield-halved"></i> Bảo hành chu đáo 12-24 tháng
+    </p>
+</div>
+    <div class="map-box" style="height: 100%; min-height: 450px;">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.3643958200673!2d108.43397499999999!3d11.949253499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171139ec1b9d741%3A0x473b77f005478113!2zQ2FtZXJhIMSQw6AgTOG6oXQgLSBIb21lc1RlY2ggSlND!5e0!3m2!1svi!2s!4v1747279392188!5m2!1svi!2s" 
+        width="100%" 
+        height="100%" 
+        style="border:0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+    <div class="contact-form">
+            <div class="section-title">
+                <h2>Đăng Ký Tư Vấn</h2>
+                <p>Để lại thông tin để kỹ thuật viên khảo sát nhanh nhất.</p>
+            </div>
+
+            <form action="#">
+                <div class="form-group">
+                    <label>Họ và Tên *</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Số Điện Thoại *</label>
+                    <input type="tel" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Dịch vụ</label>
+                    <select>
+                        <option>Lắp đặt Camera</option>
+                        <option>Hệ thống Wifi</option>
+                        <option>Khóa điện tử</option>
+                        <option>Nhà thông minh</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Địa chỉ</label>
+                    <input type="text">
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    GỬI YÊU CẦU
+                </button>
+            </form>
+        </div>
+</section>
+
+<footer>
+        <p>&copy; 2026 HOMESTECH. Giải pháp điện nhẹ đà lạt.</p>
+        <p>Địa chỉ: 281C Phan Đình Phùng, Phường Xuân Hương, Đà Lạt, Tỉnh Lâm Đồng</p>
+       <p>
+  Website:
+  <a href="https://homestechjsc.vn" target="_blank" class="footer-link">
+    www.homestechjsc.vn
+  </a>
+  -
+  <a href="https://cameradalat.com" target="_blank" class="footer-link">
+    cameradalat.com
+  </a>
+</p>
+
+    </footer>
+
+<div id="pdfModal" class="pdf-modal">
+    <div class="pdf-content">
+        <span class="close-btn" onclick="closeProfile()">&times;</span>
+        <iframe id="pdfFrame"></iframe>
+    </div>
+</div>
+
+<a href="https://zalo.me/0906255788" class="floating-zalo" target="_blank">Zalo Ngay</a>
+<a href="tel:0906255788" class="floating-hotline">Gọi Ngay</a>
+
+<script>
+    // 1. KHAI BÁO BIẾN (Chỉ khai báo 1 lần duy nhất)
+    let currentIndex = 0;
+    let autoSlideTimer;
+    const slides = document.getElementById('projectSlides');
+
+    // 2. CÁC HÀM ĐIỀU KHIỂN SLIDER
+    function moveSlider() {
+        if (!slides) return;
+        const totalImg = slides.children.length;
+        // Tự động nhận diện số hình hiển thị (Mobile 2, PC 5)
+        let visibleImg = (window.innerWidth <= 600) ? 2 : 5;
+        
+        // Luôn chạy đủ danh sách hình trước khi reset
+        if (currentIndex > totalImg - visibleImg) {
+            currentIndex = 0;
+        }
+        if (currentIndex < 0) {
+            currentIndex = totalImg - visibleImg;
+        }
+
+        const step = 100 / visibleImg;
+        slides.style.transform = `translateX(-${currentIndex * step}%)`;
+    }
+
+    function changeSlide(n) {
+        currentIndex += n;
+        moveSlider();
+        resetAutoPlay();
+    }
+
+    function resetAutoPlay() {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = setInterval(() => {
+            currentIndex++;
+            moveSlider();
+        }, 4000);
+    }
+
+    // 3. CÁC HÀM XỬ LÝ PROFILE PDF
+    function openProfile() {
+        const modal = document.getElementById('pdfModal');
+        const frame = document.getElementById('pdfFrame');
+        if (modal && frame) {
+            // Chỉ nạp file khi người dùng nhấn mở để tối ưu tốc độ
+            frame.src = "https://homestechjsc.vn/wp-content/uploads/2025/04/Profile-nhe.pdf";
+            modal.style.display = 'block';
+        }
+    }
+
+    function closeProfile() {
+        const modal = document.getElementById('pdfModal');
+        const frame = document.getElementById('pdfFrame');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+        if (frame) {
+            frame.src = ""; // Xóa src để giải phóng bộ nhớ
+        }
+    }
+
+    // Đóng khi click ra ngoài vùng trắng của Modal
+    window.onclick = function(e) {
+        const modal = document.getElementById('pdfModal');
+        if (e.target === modal) {
+            closeProfile();
+        }
+    }
+
+    // 4. KÍCH HOẠT KHI TRANG TẢI XONG
+    document.addEventListener('DOMContentLoaded', () => {
+        resetAutoPlay();
+        window.addEventListener('resize', () => {
+            currentIndex = 0;
+            moveSlider();
+        });
+    });
+</script>
+<script>
+const BOT_TOKEN = "8067373423:AAF5PKWtAREtkb5qkgTS_O_0dPNOvmqF4uk";
+const CHAT_ID = "8638148281";
+
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const inputs = document.querySelectorAll("input, select");
+
+    const name = inputs[0].value;
+    const phone = inputs[1].value;
+    const service = inputs[2].value;
+    const address = inputs[3].value;
+
+    const message =
+`📩 YÊU CẦU TƯ VẤN MỚI
+----------------------
+👤 Họ tên: ${name}
+📞 SĐT: ${phone}
+🛠 Dịch vụ: ${service}
+📍 Địa chỉ: ${address}`;
+
+    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: message
+        })
+    })
+    .then(() => {
+        alert("Gửi thành công!");
+        document.querySelector("form").reset();
+    })
+    .catch(() => {
+        alert("Gửi thất bại!");
+    });
+});
+</script>
+</body>
+</html>
