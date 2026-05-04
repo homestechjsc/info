@@ -167,8 +167,40 @@
         .submit-btn { width: 100%; padding: 12px; background: var(--primary-color); color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
 
         .pdf-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
-        .pdf-content { width: 90%; height: 90%; margin: 2% auto; background: white; border-radius: 8px; position: relative; }
-        .pdf-content iframe { width: 100%; height: 100%; border: none; }
+.pdf-content {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}        
+/* Wrapper giữ tỷ lệ */
+.pdf-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* iframe full khung */
+.pdf-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Mobile tối ưu hơn */
+@media (max-width: 768px) {
+    .pdf-content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+.pdf-content iframe { width: 100%; height: 100%; border: none; }
         .close-btn { position: absolute; top: -10px; right: -10px; width: 35px; height: 35px; background: #f39c12; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 24px; }
 
         .floating-zalo { position: fixed; bottom: 20px; right: 20px; background: #0068ff; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; }
@@ -677,9 +709,13 @@ quản lý từ xa, tăng an toàn tài sản và tối ưu vận hành cho ch�
 
 <div id="pdfModal" class="pdf-modal">
     <div class="pdf-content">
-        <span class="close-btn" onclick="closeProfile()">&times;</span>
+    <span class="close-btn" onclick="closeProfile()">&times;</span>
+
+    <div class="pdf-wrapper">
         <iframe id="pdfFrame"></iframe>
     </div>
+
+</div>
 </div>
 
 <a href="https://zalo.me/0906255788" class="floating-zalo" target="_blank">Zalo Ngay</a>
